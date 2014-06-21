@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrowdSize</title>
+  <meta charset="utf-8">
+  <meta name="description" content="CrowdSize">
+  <meta name="author" content="Bryn R Williams">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>CrowdSize</h1>
+    <h2>a tool for estimating crowd sizes</h2>
+    <p>Bryn R Williams<br/>Coursera project</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The Wisdom of Crowds</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Introducing a tool that will help journalists and others around the world
+to more easily estimate the size of a crowd</p>
+
+<p>In an age where people are increasingly taking to the streets to display their
+dissatisfaction with their political leadership, the numbers of those
+participating becomes a significant indicator of the level of protest.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>CrowdSize</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>News organisations have a responsibility to accurately judge those numbers
+to tell the whole story, and often it is a matter of dispute. </p>
+
+<p>The authorities may claim one figure while the organisers claim another.</p>
+
+<p>To this end I have designed CrowdSize, an application which will aid journalists in estimating the numbers of a crowd.</p>
+
+<p>Using a simple algorithm, all you need to know is the width and length of whichever public space is occupied to determine the number of people that are taking part.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The Algorithm</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For any area, multiply length by width and divide by the space occupied by each person.
+If we take that length=100m
+                width=50m
+            and space per person = 0.85m
+                (how close people are standing to each other determines the space they take up)
+Then</p>
+
+<pre><code class="r">100 * 50/0.85
+</code></pre>
+
+<pre><code>## [1] 5882
+</code></pre>
+
+<p>So, in an area 100m by 50m, if people are occupying 85cm each (that&#39;s pretty tight packing)
+then there will be something in the region of 5,882 of them.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Crowd and Proud</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Although CrowdSize still depends on users making a judgement of how tightly packed an area is, it allows them to play with those judgement&#39;s to come up with the most reasonable estimate.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Loud, Crowd and Proud</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>I hope you will agree that CrowdSize marks a substantial contribution to easing the workload of crowd evaluators around the world, and providing more accurate estimates by which we can judge the strength of public feeling...or just figure out how many people are crowded around the Big screen in the Pub during a World Cup match.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The Wisdom of Crowds'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='CrowdSize'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Algorithm'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Crowd and Proud'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Loud, Crowd and Proud'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+   
+  </html>
